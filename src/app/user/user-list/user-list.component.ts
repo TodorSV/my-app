@@ -14,6 +14,7 @@ export class UserListComponent implements OnInit, OnDestroy {
   users: User[] = [];
 
   constructor(private userService: UserService,
+    // private is access modifier
     private globalLoaderService: GlobalLoaderService) { }
 
   ngOnInit(): void {
@@ -22,6 +23,8 @@ export class UserListComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+
+    // To clear data or unsubscribe from observables
     console.log('On Destroy called');
     
   }

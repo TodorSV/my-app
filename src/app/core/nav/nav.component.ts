@@ -10,7 +10,9 @@ export class NavComponent {
 
   constructor(private router: Router) { }
 
-  navTo(path: string) {
-    this.router.navigate([path]);
-  }
+
+  // OPTION A for navigating to a route
+  // navTo(path: string) {
+  //   this.router.navigate([path]);
+  // }
 }
